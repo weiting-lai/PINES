@@ -1,0 +1,23 @@
+output_root: output/3d
+case_tag: fast
+seed: 42
+fold: 0
+frequency_bin: 40
+mics: 24
+n_grid: 22
+mic_grid: 5
+slice_z: 0.0
+
+room:
+  room_size: [5.0, 4.0, 3.0]
+  region_size: [1.0, 1.0, 1.0]
+  region_origin: [2.0, 1.5, 1.0]
+  sample_rate: 16000
+  fft_size: 1024
+  rir_length: 2048
+  sound_speed: 343.0
+  n_sources: 2
+  source_margin: 0.1
+  t60: 0.0
+  randomized_ism: false
+  ism_order: 10
