@@ -26,6 +26,7 @@ models:
     w0: 30.0
     lr: 1.0e-3
     reg_coeff: 1.0e-6
+    iterations: 300
 
   pines_siren:
     family: siren_shared
@@ -40,3 +41,4 @@ models:
     w0: 30.0
     lr: 1.0e-3
     reg_coeff: 1.0e-6
+    iterations: 300
