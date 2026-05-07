@@ -69,10 +69,3 @@ Both runners support:
 ## Notes
 
 The default configs use `t60: 0.0`, which runs an anechoic direct-path simulation. If you set `t60 > 0`, the demo uses `pyroomacoustics` for image-source room simulation.
-
-## Attribution
-
-Small utility routines for metrics/noise follow the style of MIT-licensed helper code from:
-
-- `PIDL-sound-field-reconstruction`: https://github.com/steDamiano/PIDL-sound-field-reconstruction
-- `local_soundfield_reconstruction`: https://github.com/manvhah/local_soundfield_reconstruction
