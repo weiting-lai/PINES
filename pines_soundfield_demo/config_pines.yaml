@@ -1,0 +1,34 @@
+device: auto
+mic_snr_db: 30.0
+
+equivalent_sources_2d:
+  anchors: 80
+  radii: [1.55, 1.70]
+  phase_stagger: true
+  use_ds_weighting: true
+
+equivalent_sources_3d:
+  anchors: 96
+  radii: [1.10, 1.25]
+  use_ds_weighting: true
+
+models:
+  pines_tanh:
+    family: baseline_tanh_shared
+    hidden_dim: 64
+    hidden_layers: 2
+    pe_levels: 0
+    coord_scale: 2.0
+    lr: 1.0e-3
+    reg_coeff: 1.0e-5
+    iterations: 300
+
+  pines_siren:
+    family: siren_shared
+    hidden_dim: 64
+    hidden_layers: 2
+    coord_scale: 2.0
+    w0: 30.0
+    lr: 1.0e-3
+    reg_coeff: 1.0e-6
+    iterations: 300
