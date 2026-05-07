@@ -14,8 +14,8 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
-python run_case_2d.py --config config_2d.yaml --pines-config config_pines.yaml --device cpu
-python run_case_3d.py --config config_3d.yaml --pines-config config_pines.yaml --device cpu
+python run_case_2d.py --config config/config_2d.yaml --pines-config config/config_pines.yaml --device cpu
+python run_case_3d.py --config config/config_3d.yaml --pines-config config/config_pines.yaml --device cpu
 ```
 
 On macOS/Linux, activate the environment with `source .venv/bin/activate`.
@@ -41,9 +41,9 @@ Each case contains:
 
 ## Configs
 
-- `config_2d.yaml` controls the 2D room, region of interest, grid, microphones, frequency bin, source count, T60, seed, and output root.
-- `config_3d.yaml` controls the 3D room, XY slice, 3D microphone candidate grid, frequency bin, source count, T60, seed, and output root.
-- `config_pines.yaml` controls PINES hyperparameters, training iterations, device, microphone SNR, and equivalent source geometry.
+- `config/config_2d.yaml` controls the 2D room, region of interest, grid, microphones, frequency bin, source count, T60, seed, and output root.
+- `config/config_3d.yaml` controls the 3D room, XY slice, 3D microphone candidate grid, frequency bin, source count, T60, seed, and output root.
+- `config/config_pines.yaml` controls PINES hyperparameters, training iterations, device, microphone SNR, and equivalent source geometry.
 
 The defaults are intentionally small so the demo can run on CPU. For cleaner figures, increase:
 

@@ -114,8 +114,8 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the standalone 3D PINES sound field demo.")
-    parser.add_argument("--config", type=Path, default=Path("config_3d.yaml"))
-    parser.add_argument("--pines-config", type=Path, default=Path("config_pines.yaml"))
+    parser.add_argument("--config", type=Path, default=Path("config/config_3d.yaml"))
+    parser.add_argument("--pines-config", type=Path, default=Path("config/config_pines.yaml"))
     parser.add_argument("--output", type=Path, default=None)
     parser.add_argument("--device", choices=["auto", "cpu", "cuda"], default=None)
     parser.add_argument("--models", nargs="+", choices=list(ALLOWED_MODELS), default=None)
