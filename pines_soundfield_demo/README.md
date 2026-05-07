@@ -43,7 +43,7 @@ Each case contains:
 
 - `config_2d.yaml` controls the 2D room, region of interest, grid, microphones, frequency bin, source count, T60, seed, and output root.
 - `config_3d.yaml` controls the 3D room, XY slice, 3D microphone candidate grid, frequency bin, source count, T60, seed, and output root.
-- `config_pines.yaml` controls PINES hyperparameters, device, microphone SNR, and equivalent source geometry.
+- `config_pines.yaml` controls PINES hyperparameters, training iterations, device, microphone SNR, and equivalent source geometry.
 
 The defaults are intentionally small so the demo can run on CPU. For cleaner figures, increase:
 
